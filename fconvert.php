@@ -2,7 +2,7 @@
 <title>แปลงอุณหภูมิจากฟาเรนไฮต์เป็นเซลเซียส</title>
 <body>
 
-<h2>แปลงอุณหภูมิจากฟาเรนไฮต์เป็นเซลเซียส</h2>
+<h2>แปลงอุณหภูมิ</h2>
 
 <p>
   <label>ฟาเรนไฮต์</label>
@@ -36,7 +36,7 @@ function temperatureConverter(num) {
 }
 function Kelvinc(num) {
   num = parseFloat(num);
-  document.getElementById("Kelvin").innerHTML=num*274.15;
+  document.getElementById("Kelvin").innerHTML=num + 273;
 }
 
 //Man
@@ -45,7 +45,10 @@ function Cto(num){
   document.getElementById("ctof").innerHTML = (18.*c) +32;
   document.getElementById("ctok").innerHTML = c +273.15; 
   document.getElementById("ctor").innerHTML = c*0.8;
-
+}
+function Romurc(num) {
+  num = parseFloat(num);
+  document.getElementById("Romur").innerHTML=num*0.8;
 }
 
 </script>
