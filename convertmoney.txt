@@ -1,0 +1,21 @@
+<html>
+<title>·ª≈ß °ÿ≈‡ß‘π</title>
+<body>
+
+<h2>·ª≈ß °ÿ≈‡ß‘π</h2>
+
+<p>
+  <label>∫“∑</label>
+  <input id="bb" type="number" placeholder="bath" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>¥Õ≈≈Ë“: <span id="dd"></span></p>
+
+<script>
+function temperatureConverter(num) {
+  num = parseFloat(num);
+  document.getElementById("dd").innerHTML=num*31.42;
+}
+</script>
+
+</body>
+</html>
