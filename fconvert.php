@@ -25,7 +25,7 @@
 <p>R to K: <span id="rtok"></span></p>
 
 <label>Input F</label>
-<input id="inpF" type="text" oninput="Rto(this.value)" onchange="Rto(this.value)">
+<input id="inpF" type="text" oninput="Fto(this.value)" onchange="Fto(this.value)">
 <p>F to K: <span id="ftok"></span></p>
 <p>F to C: <span id="ftoc"></span></p>
 <p>F to R: <span id="ftor"></span></p>
@@ -50,19 +50,19 @@ function Cto(num){
   document.getElementById("ctok").innerHTML = c +273.15; 
   document.getElementById("ctor").innerHTML = c*0.8;
 }
-function Cto(num){
+function Kto(num){
   c = parseFloat(num);
   document.getElementById("ktof").innerHTML = c * 1.8 - 459.67;
   document.getElementById("ktoc").innerHTML = c / 27; 
   document.getElementById("ktor").innerHTML = (c - 273.15)* 0.52500;
 }
-function Cto(num){
+function Rto(num){
   c = parseFloat(num);
   document.getElementById("rtof").innerHTML = (c - 7.5)* 3.4286;
   document.getElementById("rtoc").innerHTML = c * 1.25; 
   document.getElementById("rtok").innerHTML = (c -7.5)/0.52500;
 }
-function Cto(num){
+function Fto(num){
   c = parseFloat(num);
   document.getElementById("ftok").innerHTML = (c +459.67)/1.8;
   document.getElementById("ftoc").innerHTML = (c-32)*5/9 
