@@ -4,41 +4,35 @@
 
 <h2>แปลงอุณหภูมิ</h2>
 
-<p>
-  <label>ฟาเรนไฮต์</label>
-  <input id="Fahrenheit" type="number" placeholder="ฟาเรนไฮต์" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-</p>
-<p>Celcius: <span id="Celcius"></span></p>
 
-  <input id="Kelvin" type="number" placeholder="kelvin" oninput="Kelvinc(this.value)" onchange="Kelvinc(this.value)">
-
-<p>Kelvin: <span id="Kelvin"></span></p>
 <!-- Man -->
-<label>Input Celcius</label>
+<label>Input C</label>
 <input id="inpC" type="text" oninput="Cto(this.value)" onchange="Cto(this.value)">
 <p>C to F: <span id="ctof"></span></p>
 <p>C to K: <span id="ctok"></span></p>
 <p>C to R: <span id="ctor"></span></p>
 
-<p>Kelvin: <span id="Kel"></span></p>
+<label>Input K</label>
+<input id="inpK" type="text" oninput="Kto(this.value)" onchange="Kto(this.value)">
+<p>K to F: <span id="ktof"></span></p>
+<p>K to C: <span id="ktoc"></span></p>
+<p>K to R: <span id="ktor"></span></p>
 
-<p>
-  <label>โรเมอร์</label>
-  <input id="Romur" type="number" placeholder="โรเมอร์" oninput="Romurc(this.value)" onchange="Romurc(this.value)">
-</p>
-<p>Romur: <span id="Rom"></span></p>
+<label>Input R</label>
+<input id="inpR" type="text" oninput="Rto(this.value)" onchange="Rto(this.value)">
+<p>R to F: <span id="rtof"></span></p>
+<p>R to C: <span id="rtoc"></span></p>
+<p>R to K: <span id="rtok"></span></p>
+
+<label>Input F</label>
+<input id="inpF" type="text" oninput="Rto(this.value)" onchange="Rto(this.value)">
+<p>F to K: <span id="ftok"></span></p>
+<p>F to C: <span id="ftoc"></span></p>
+<p>F to R: <span id="ftor"></span></p>
+
 
 
 <script>
-
-function temperatureConverter(num) {
-  num = parseFloat(num);
-  document.getElementById("Celcius").innerHTML=(num-32)/1.8;
-}
-function Kelvinc(num) {
-  num = parseFloat(num);
-  document.getElementById("Kel").innerHTML=num + 273;
-}
 
 //Man
 function Cto(num){
@@ -47,10 +41,25 @@ function Cto(num){
   document.getElementById("ctok").innerHTML = c +273.15; 
   document.getElementById("ctor").innerHTML = c*0.8;
 }
-function Romurc(num) {
-  num = parseFloat(num);
-  document.getElementById("Rom").innerHTML=num*0.8;
+function Cto(num){
+  c = parseFloat(num);
+  document.getElementById("ktof").innerHTML = c * 1.8 - 459.67;
+  document.getElementById("ktoc").innerHTML = c / 27; 
+  document.getElementById("ktor").innerHTML = (c - 273.15)* 0.52500;
 }
+function Cto(num){
+  c = parseFloat(num);
+  document.getElementById("rtof").innerHTML = (c - 7.5)* 3.4286;
+  document.getElementById("rtoc").innerHTML = c * 1.25; 
+  document.getElementById("rtok").innerHTML = (c -7.5)/0.52500;
+}
+function Cto(num){
+  c = parseFloat(num);
+  document.getElementById("ftok").innerHTML = (c +459.67)/1.8;
+  document.getElementById("ftoc").innerHTML = (c-32)*5/9 
+  document.getElementById("ftor").innerHTML = (c -32)*0.29167;
+}
+
 
 </script>
 
