@@ -2,7 +2,7 @@
 <title>แปลงอุณหภูมิจากฟาเรนไฮต์เป็นเซลเซียส</title>
 <body>
 
-<h2>แปลงอุณหภูมิ</h2>
+<h2>Function แปลงอุณหภูมิ</h2>
 
 
 <!-- Man -->
@@ -34,6 +34,15 @@
 
 <script>
 
+<script>
+function temperatureConverter(num) {
+  num = parseFloat(num);
+  document.getElementById("Celcius").innerHTML=(num-32)/1.8;
+}
+function Kelvinc(num) {
+  num = parseFloat(num);
+  document.getElementById("Kel").innerHTML=num + 273;
+}
 //Man
 function Cto(num){
   c = parseFloat(num);
@@ -62,6 +71,5 @@ function Cto(num){
 
 
 </script>
-
 </body>
 </html>
