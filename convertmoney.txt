@@ -1,0 +1,21 @@
+<html>
+<title>แปลงสกุลเงิน</title>
+<body>
+
+<h2>>แปลงสกุลเงิน</</h2>
+
+<p>
+  <label>Bath</label>
+  <input id="bb" type="number" placeholder="bath" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Dollar: <span id="dd"></span></p>
+
+<script>
+function temperatureConverter(num) {
+  num = parseFloat(num);
+  document.getElementById("dd").innerHTML=num*31.42;
+}
+</script>
+
+</body>
+</html>
