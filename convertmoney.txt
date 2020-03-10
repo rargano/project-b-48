@@ -1,14 +1,14 @@
 <html>
-<title>�ŧʡ���Թ</title>
+<title>แปลงสกุลเงิน</title>
 <body>
 
-<h2>�ŧʡ���Թ</h2>
+<h2>>แปลงสกุลเงิน</</h2>
 
 <p>
-  <label>�ҷ</label>
+  <label>Bath</label>
   <input id="bb" type="number" placeholder="bath" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
 </p>
-<p>������: <span id="dd"></span></p>
+<p>Dollar: <span id="dd"></span></p>
 
 <script>
 function temperatureConverter(num) {
