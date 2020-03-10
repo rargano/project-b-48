@@ -14,6 +14,13 @@
 
 <p>Kelvin: <span id="Kelvin"></span></p>
 
+<p>
+  <label>โรเมอร์</label>
+  <input id="Romur" type="number" placeholder="โรเมอร์" oninput="Romurc(this.value)" onchange="Romurc(this.value)">
+</p>
+<p>Romur: <span id="Romur"></span></p>
+
+
 <script>
 function temperatureConverter(num) {
   num = parseFloat(num);
