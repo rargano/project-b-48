@@ -31,9 +31,6 @@
 <p>F to R: <span id="ftor"></span></p>
 
 
-
-<script>
-
 <script>
 function temperatureConverter(num) {
   num = parseFloat(num);
