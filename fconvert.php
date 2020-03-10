@@ -12,13 +12,13 @@
 
   <input id="Kelvin" type="number" placeholder="kelvin" oninput="Kelvinc(this.value)" onchange="Kelvinc(this.value)">
 
-<p>Kelvin: <span id="Kelvin"></span></p>
+<p>Kelvin: <span id="Kel"></span></p>
 
 <p>
   <label>โรเมอร์</label>
   <input id="Romur" type="number" placeholder="โรเมอร์" oninput="Romurc(this.value)" onchange="Romurc(this.value)">
 </p>
-<p>Romur: <span id="Romur"></span></p>
+<p>Romur: <span id="Rom"></span></p>
 
 
 <script>
@@ -28,12 +28,12 @@ function temperatureConverter(num) {
 }
 function Kelvinc(num) {
   num = parseFloat(num);
-  document.getElementById("Kelvin").innerHTML=num + 273;
+  document.getElementById("Kel").innerHTML=num + 273;
 }
 
 function Romurc(num) {
   num = parseFloat(num);
-  document.getElementById("Romur").innerHTML=num*0.8;
+  document.getElementById("Rom").innerHTML=num*0.8;
 }
 
 </script>
