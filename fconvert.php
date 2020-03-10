@@ -20,12 +20,13 @@
 <p>C to K: <span id="ctok"></span></p>
 <p>C to R: <span id="ctor"></span></p>
 
+<p>Kelvin: <span id="Kel"></span></p>
 
 <p>
   <label>โรเมอร์</label>
   <input id="Romur" type="number" placeholder="โรเมอร์" oninput="Romurc(this.value)" onchange="Romurc(this.value)">
 </p>
-<p>Romur: <span id="Romur"></span></p>
+<p>Romur: <span id="Rom"></span></p>
 
 
 <script>
@@ -36,7 +37,7 @@ function temperatureConverter(num) {
 }
 function Kelvinc(num) {
   num = parseFloat(num);
-  document.getElementById("Kelvin").innerHTML=num + 273;
+  document.getElementById("Kel").innerHTML=num + 273;
 }
 
 //Man
@@ -48,7 +49,7 @@ function Cto(num){
 }
 function Romurc(num) {
   num = parseFloat(num);
-  document.getElementById("Romur").innerHTML=num*0.8;
+  document.getElementById("Rom").innerHTML=num*0.8;
 }
 
 </script>
