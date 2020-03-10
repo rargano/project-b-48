@@ -15,10 +15,10 @@
 <p>Kelvin: <span id="Kelvin"></span></p>
 <!-- Man -->
 <label>Input Celcius</label>
-<input id="inpC" type="text">
-<label id="ctof"></label>
-<label id="ctok"></label>
-<label id="ctor"></label>
+<input id="inpC" type="text" oninput="Cto(this.value)" onchange="Cto(this.value)">
+<p>C to F: <span id="ctof"></span></p>
+<p>C to K: <span id="ctok"></span></p>
+<p>C to R: <span id="ctor"></span></p>
 
 
 <p>
@@ -41,10 +41,10 @@ function Kelvinc(num) {
 
 //Man
 function Cto(num){
-  c = parseFloar(num);
-  document.getElementById("ctof").innerHTML = (18.*num) +32;
-  document.getElementById("ctok").innerHTML = num +273.15; 
-  document.getElementById("ctor").innerHTML = num*0.8;
+  c = parseFloat(num);
+  document.getElementById("ctof").innerHTML = (18.*c) +32;
+  document.getElementById("ctok").innerHTML = c +273.15; 
+  document.getElementById("ctor").innerHTML = c*0.8;
 
 }
 
