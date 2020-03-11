@@ -2,7 +2,7 @@
 <title>แปลงค่าเงิน</title>
 <body>
 
-<h2>แปลงค่าเงิน</h2>
+<h2>Change Money</h2>
 
 
 <label>Input Bath</label>
